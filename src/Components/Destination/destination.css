@@ -1,0 +1,239 @@
+.destination {
+  height: 100vh;
+  overflow: hidden;
+}
+.destination .hero-img-destination {
+  background: url("../../assets/destination/background-destination-mobile.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  transform-origin: center center;
+  height: 100vh;
+}
+.destination .hero-img-destination .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.3rem;
+}
+.destination .hero-img-destination .hamburger {
+  cursor: pointer;
+}
+.destination .hero-img-destination .destination-title {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.destination .hero-img-destination .destination-title span {
+  margin-right: 2rem;
+  color: gray;
+  font-weight: bold;
+}
+.destination .hero-img-destination .destination-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.destination .hero-img-destination .destination-content .images {
+  width: 150px;
+  height: 150px;
+}
+.destination .hero-img-destination .destination-content .choose-planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  list-style: none;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+.destination .hero-img-destination .destination-content .choose-planet .li-item {
+  position: relative;
+  padding: 2rem;
+  cursor: pointer;
+}
+.destination .hero-img-destination .destination-content .choose-planet .li-item.active {
+  color: white;
+}
+.destination .hero-img-destination .destination-content .choose-planet .li-item::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 50%;
+  height: 2px;
+  background-color: gray;
+  transition: transform 0.3s;
+  content: "";
+}
+.destination .hero-img-destination .destination-content .choose-planet .li-item:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+.destination .hero-img-destination .destination-content .choose-planet .li-item.active::before {
+  transform: translateX(-50%) scaleX(1);
+  background-color: white;
+}
+.destination .hero-img-destination .destination-content .name {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.destination .hero-img-destination .destination-content .description {
+  text-align: center;
+  color: #D0D6F9;
+  line-height: 25px;
+}
+.destination .hero-img-destination .destination-content .line {
+  margin-top: 2rem;
+  width: 100%;
+  height: 1px;
+  background-color: #979797;
+}
+.destination .hero-img-destination .destination-content .destination-text-boxes {
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.destination .hero-img-destination .destination-content .destination-text-boxes .distance {
+  font-size: 3rem;
+}
+.destination .hero-img-destination .destination-content .destination-text-boxes .destination-text {
+  letter-spacing: 1px;
+  color: #D0D6F9;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+.destination .hero-img-destination .destination-content .destination-text-boxes .travel {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .destination {
+    overflow: auto;
+  }
+  .destination .hero-img-destination {
+    background: url("../../assets/destination/background-destination-tablet.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+  }
+  .destination .hero-img-destination .hamburger {
+    display: none;
+  }
+  .destination .hero-img-destination .logo {
+    position: fixed;
+    margin-top: 5rem;
+  }
+  .destination .hero-img-destination .destination-title {
+    padding: 2.5rem;
+    margin: 5rem 0.6rem;
+    text-align: left;
+  }
+  .destination .hero-img-destination .destination-content .images {
+    width: 300px;
+    height: 300px;
+  }
+  .destination .hero-img-destination .destination-content .name {
+    font-size: 8rem;
+  }
+  .destination .hero-img-destination .destination-content .description {
+    width: 514px;
+    font-size: 1.8rem;
+  }
+  .destination .hero-img-destination .destination-content .destination-text-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .destination {
+    overflow: hidden;
+  }
+  .destination .hero-img-destination {
+    background: url("../../assets/destination/background-destination-desktop.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  .destination .hero-img-destination .destination-title {
+    margin-left: 10rem;
+    font-size: 1.8rem;
+  }
+  .destination .hero-img-destination .destination-content {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .destination .hero-img-destination .destination-content .images {
+    width: 480px;
+    height: 480px;
+  }
+  .destination .hero-img-destination .destination-content .choose-planet {
+    justify-content: flex-start;
+  }
+  .destination .hero-img-destination .destination-content .text-content .name {
+    text-align: left;
+    font-size: 9rem;
+  }
+  .destination .hero-img-destination .destination-content .text-content .description {
+    text-align: left;
+    font-size: 2rem;
+    padding: 3rem;
+    line-height: 35px;
+  }
+  .destination .hero-img-destination .destination-content .text-content .line {
+    width: 90%;
+    margin-left: 3rem;
+  }
+  .destination .hero-img-destination .destination-content .text-content .destination-text-boxes {
+    justify-content: flex-start;
+    gap: 70px;
+  }
+  .destination .hero-img-destination .destination-content .text-content .destination-text-boxes .destination-text {
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .destination .hero-img-destination .destination-content .text-content .destination-text-boxes .distance {
+    margin-left: 3rem;
+  }
+  .destination .hero-img-destination .destination-content .text-content .destination-text-boxes .travel {
+    text-align: left;
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 2000px) {
+  .destination .hero-img-destination .destination-title {
+    padding-left: 10rem;
+    font-size: 3rem;
+  }
+  .destination .hero-img-destination .destination-content .choose-planet .li-item {
+    font-size: 3rem;
+  }
+  .destination .hero-img-destination .destination-content .text-content .name {
+    font-size: 12rem;
+  }
+  .destination .hero-img-destination .destination-content .text-content .description {
+    font-size: 3rem;
+    width: 700px;
+  }
+}
+@media (min-width: 2500px) {
+  .destination .hero-img-destination .destination-title {
+    padding-left: 30rem;
+  }
+  .destination .hero-img-destination .destination-content {
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=destination.css.map */

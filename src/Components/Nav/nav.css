@@ -1,0 +1,220 @@
+.nav-mobile-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(11, 13, 23, 0.15);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 999;
+}
+
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 1000;
+}
+.logo-container .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+.nav-mobile--active {
+  transform: translateX(0);
+  background-color: white;
+}
+.nav-mobile .nav-close {
+  position: absolute;
+  top: 3.5rem;
+  right: 2.5rem;
+  cursor: pointer;
+}
+.nav-mobile .nav-list {
+  margin-top: 10rem;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.nav-mobile .nav-list .nav-item {
+  position: relative;
+  display: block;
+  padding: 2rem;
+  cursor: pointer;
+}
+.nav-mobile .nav-list .nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.nav-mobile .nav-list .nav-item::before {
+  position: absolute;
+  top: 35%;
+  right: -20px;
+  width: 5px;
+  height: 30%;
+  transform: scaleY(0);
+  background-color: gray;
+  transition: transform 0.3s;
+  content: "";
+}
+.nav-mobile .nav-list .nav-item:hover::before {
+  transform: scaleY(1);
+}
+.nav-mobile .nav-list .nav-item .active::before {
+  position: absolute;
+  top: 35%;
+  right: -20px;
+  width: 5px;
+  height: 30%;
+  transform: scaleX(1);
+  background-color: white;
+  transition: transform 0.3s;
+  content: "";
+}
+.nav-mobile .nav-list .nav-item .nav-index {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.header-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo-container {
+    padding: 2.5rem;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem;
+  }
+  .header-container .nav-screen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(28, 31, 41, 0.85);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    color: white;
+    z-index: 1000;
+  }
+  .header-container .nav-screen a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-container .nav-screen .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .header-container .nav-screen .nav-list .nav-item {
+    position: relative;
+    display: block;
+    padding: 2rem;
+    cursor: pointer;
+  }
+  .header-container .nav-screen .nav-list .nav-item::before {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    top: 75px;
+    width: 80%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: gray;
+    transition: transform 0.3s;
+    content: "";
+  }
+  .header-container .nav-screen .nav-list .nav-item:hover::before {
+    transform: scaleX(1);
+  }
+  .header-container .nav-screen .nav-list .nav-item .active::before {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    top: 75px;
+    width: 80%;
+    height: 3px;
+    transform: scaleX(1);
+    background-color: white;
+    transition: transform 0.3s;
+    content: "";
+  }
+  .header-container .nav-screen .nav-list .nav-item .nav-index {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .nav-screen {
+    justify-content: flex-end;
+    width: 750px;
+  }
+  .nav-screen .nav-list {
+    position: relative;
+  }
+  .nav-screen .nav-list::before {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 225px;
+    height: 1px;
+    background-color: #979797;
+    content: "";
+  }
+}
+@media (min-width: 1200px) {
+  .nav-screen {
+    width: 800px;
+  }
+  .nav-screen .nav-list::before {
+    width: 400px;
+    right: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .nav-screen {
+    width: 1000px;
+  }
+  .nav-screen .nav-list::before {
+    width: 600px;
+    right: 130%;
+  }
+}
+@media (min-width: 2000px) {
+  .nav-screen {
+    width: 1200px;
+  }
+  .nav-screen .nav-list::before {
+    width: 800px;
+    right: 150%;
+  }
+}
+@media (min-width: 2500px) {
+  .nav-screen {
+    width: 1400px;
+  }
+  .nav-screen .nav-list::before {
+    width: 800px;
+    right: 200%;
+  }
+}/*# sourceMappingURL=nav.css.map */

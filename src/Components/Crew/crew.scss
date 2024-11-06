@@ -1,0 +1,239 @@
+@import '../../sass/colors';
+
+.crew {
+	height: 100vh;
+	overflow: hidden;
+
+	.hero-img-crew {
+		background: url('../../assets/crew/background-crew-mobile.jpg');
+		position: relative;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		z-index: 0;
+		transform-origin: center center;
+		height: 100vh;
+
+		.header {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 2.3rem;
+		}
+
+		.hamburger {
+			cursor: pointer;
+		}
+
+		.crew-title-mobile {
+			margin-top: 3rem;
+			text-align: center;
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+
+			span {
+				margin-right: 2rem;
+				color: gray;
+				font-weight: bold;
+			}
+		}
+		.crew-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 4rem;
+			padding: 2rem;
+			text-align: center;
+
+			.crew-title-screen {
+				display: none;
+			}
+
+			.role {
+				font-size: 2rem;
+				color: gray;
+				text-transform: uppercase;
+			}
+
+			.name {
+				margin-top: 1rem;
+				font-size: 2.5rem;
+				color: $white;
+				text-transform: uppercase;
+			}
+
+			.bio {
+				margin-top: 3rem;
+				color: $main;
+				line-height: 25px;
+			}
+		}
+
+		.choose-crew {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 5rem;
+			list-style: none;
+
+			.li-item {
+				margin: 1rem;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #535353;
+				cursor: pointer;
+
+				&:hover {
+					background-color: gray;
+				}
+
+				&.active {
+					background-color: $white;
+				}
+			}
+		}
+
+		.crew-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			padding-top: 2rem;
+			width: 240px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.crew {
+		.hero-img-crew {
+			background: url('../../assets/crew/background-crew-tablet.jpg');
+			position: relative;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			z-index: 0;
+			transform-origin: center center;
+
+			.hamburger {
+				display: none;
+			}
+
+			.crew-title-mobile {
+				text-align: left;
+				padding: 2rem;
+			}
+
+			.crew-content {
+				.name {
+					font-size: 4.5rem;
+				}
+
+				.bio {
+					width: 512px;
+					font-size: 1.8rem;
+				}
+			}
+
+			.choose-crew {
+				margin-top: 2rem;
+			}
+			.crew-image {
+				margin-top: 2rem;
+				width: 300px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.crew {
+		.hero-img-crew {
+			background: url('../../assets/crew/background-crew-desktop.jpg');
+			position: relative;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			z-index: 0;
+			transform-origin: center center;
+			.crew-box {
+				display: flex;
+				align-items: center;
+
+				padding-left: 10rem;
+
+				.crew-title-mobile {
+					display: none;
+				}
+
+				.crew-content {
+					align-items: start;
+					text-align: left;
+
+					.crew-title-screen {
+						display: block;
+						margin-top: 3rem;
+						color: $white;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-size: 2.5rem;
+
+						span {
+							margin-right: 2rem;
+							color: gray;
+							font-weight: bold;
+						}
+					}
+
+					.role {
+						margin-top: 15rem;
+						font-size: 5rem;
+					}
+
+					.name {
+						font-size: 8rem;
+					}
+
+					.choose-crew {
+						margin-top: 20rem;
+
+						.li-item {
+							width: 15px;
+							height: 15px;
+						}
+					}
+				}
+
+				.crew-image {
+					width: 450px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 2000px) {
+	.crew {
+		.hero-img-crew {
+			.crew-box {
+				padding-left: 30rem;
+
+				.crew-content {
+					.bio {
+						font-size: 3rem;
+						line-height: 35px;
+						width: 650px;
+					}
+				}
+
+				.crew-image {
+					width: 600px;
+				}
+			}
+
+		}
+	}
+}

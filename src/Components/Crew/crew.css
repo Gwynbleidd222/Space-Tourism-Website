@@ -1,0 +1,191 @@
+.crew {
+  height: 100vh;
+  overflow: hidden;
+}
+.crew .hero-img-crew {
+  background: url("../../assets/crew/background-crew-mobile.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  transform-origin: center center;
+  height: 100vh;
+}
+.crew .hero-img-crew .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.3rem;
+}
+.crew .hero-img-crew .hamburger {
+  cursor: pointer;
+}
+.crew .hero-img-crew .crew-title-mobile {
+  margin-top: 3rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.crew .hero-img-crew .crew-title-mobile span {
+  margin-right: 2rem;
+  color: gray;
+  font-weight: bold;
+}
+.crew .hero-img-crew .crew-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+}
+.crew .hero-img-crew .crew-content .crew-title-screen {
+  display: none;
+}
+.crew .hero-img-crew .crew-content .role {
+  font-size: 2rem;
+  color: gray;
+  text-transform: uppercase;
+}
+.crew .hero-img-crew .crew-content .name {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+.crew .hero-img-crew .crew-content .bio {
+  margin-top: 3rem;
+  color: #D0D6F9;
+  line-height: 25px;
+}
+.crew .hero-img-crew .choose-crew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  list-style: none;
+}
+.crew .hero-img-crew .choose-crew .li-item {
+  margin: 1rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #535353;
+  cursor: pointer;
+}
+.crew .hero-img-crew .choose-crew .li-item:hover {
+  background-color: gray;
+}
+.crew .hero-img-crew .choose-crew .li-item.active {
+  background-color: white;
+}
+.crew .hero-img-crew .crew-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  width: 240px;
+}
+
+@media (min-width: 768px) {
+  .crew .hero-img-crew {
+    background: url("../../assets/crew/background-crew-tablet.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform-origin: center center;
+  }
+  .crew .hero-img-crew .hamburger {
+    display: none;
+  }
+  .crew .hero-img-crew .crew-title-mobile {
+    text-align: left;
+    padding: 2rem;
+  }
+  .crew .hero-img-crew .crew-content .name {
+    font-size: 4.5rem;
+  }
+  .crew .hero-img-crew .crew-content .bio {
+    width: 512px;
+    font-size: 1.8rem;
+  }
+  .crew .hero-img-crew .choose-crew {
+    margin-top: 2rem;
+  }
+  .crew .hero-img-crew .crew-image {
+    margin-top: 2rem;
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .crew .hero-img-crew {
+    background: url("../../assets/crew/background-crew-desktop.jpg");
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform-origin: center center;
+  }
+  .crew .hero-img-crew .crew-box {
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-title-mobile {
+    display: none;
+  }
+  .crew .hero-img-crew .crew-box .crew-content {
+    align-items: start;
+    text-align: left;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .crew-title-screen {
+    display: block;
+    margin-top: 3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .crew-title-screen span {
+    margin-right: 2rem;
+    color: gray;
+    font-weight: bold;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .role {
+    margin-top: 15rem;
+    font-size: 5rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .name {
+    font-size: 8rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .choose-crew {
+    margin-top: 20rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .choose-crew .li-item {
+    width: 15px;
+    height: 15px;
+  }
+  .crew .hero-img-crew .crew-box .crew-image {
+    width: 450px;
+  }
+}
+@media (min-width: 2000px) {
+  .crew .hero-img-crew .crew-box {
+    padding-left: 30rem;
+  }
+  .crew .hero-img-crew .crew-box .crew-content .bio {
+    font-size: 3rem;
+    line-height: 35px;
+    width: 650px;
+  }
+  .crew .hero-img-crew .crew-box .crew-image {
+    width: 600px;
+  }
+}/*# sourceMappingURL=crew.css.map */
