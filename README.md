@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a multipage website for a fictional space tourism company, built with React and styled using Sass. The website allows users to explore various space travel destinations, such as the Moon, Mars, Europa, and Titan, providing detailed information about each location. It features dynamic content loading and responsive design, ensuring an optimal experience on both desktop and mobile devices. The site also includes interactive elements like navigation and smooth transitions, offering an engaging and immersive user experience. This project is based on the Frontend Mentor Space Tourism Multipage Website Challenge.
