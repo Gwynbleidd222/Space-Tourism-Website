@@ -15,7 +15,7 @@ See hover states for all interactive elements on the page
 
 ### Screenshot
 
-![](./screenshots/Screenshot_3.jpg)
+![](Screenshot_3.jpg)
 
 
 ### Links
