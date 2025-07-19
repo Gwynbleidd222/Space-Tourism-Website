@@ -1,4 +1,4 @@
-# Frontend Mentor - Single-page developer portfolio solution
+# Frontend Mentor -  Space tourism solution
 
 This is my solution to the [Space tourism multi-page website](https://github.com/Gwynbleidd222/Space-Tourism-Website). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
